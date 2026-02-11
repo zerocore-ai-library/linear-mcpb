@@ -2,6 +2,45 @@
 
 A remote MCP server for interacting with Linear issues, projects, documents, comments, cycles, and milestones.
 
+## Setup
+
+### Using tool CLI
+
+Install the CLI from https://github.com/anthropics/tool-cli
+
+```bash
+# Install from tool.store
+tool install library/linear
+```
+
+```bash
+# View available tools
+tool info library/linear
+```
+
+```bash
+# List your issues
+tool call library/linear -m list_issues -p assignee=me
+```
+
+```bash
+# Get issue details
+tool call library/linear -m get_issue -p id=LIN-123
+```
+
+```bash
+# Create a new issue
+tool call library/linear -m create_issue -p title="Fix bug" -p team="Engineering"
+```
+
+### Authentication
+
+Linear MCP uses OAuth 2.1 authentication. On first use, you'll be prompted to authorize access through your browser.
+
+**Connection endpoints:**
+- HTTP (recommended): `https://mcp.linear.app/mcp`
+- SSE: `https://mcp.linear.app/sse`
+
 ## Tools
 
 ### `list_issues`
@@ -314,45 +353,6 @@ Search Linear's documentation to learn about features and usage.
 |-------|------|----------|-------------|
 | `query` | string | Yes | Search query |
 | `page` | number | No | Page number (default: 0) |
-
-## Setup
-
-### Using tool CLI
-
-Install the CLI from https://github.com/anthropics/tool-cli
-
-```bash
-# Install from tool.store
-tool install library/linear
-```
-
-```bash
-# View available tools
-tool info library/linear
-```
-
-```bash
-# List your issues
-tool call library/linear -m list_issues -p assignee=me
-```
-
-```bash
-# Get issue details
-tool call library/linear -m get_issue -p id=LIN-123
-```
-
-```bash
-# Create a new issue
-tool call library/linear -m create_issue -p title="Fix bug" -p team="Engineering"
-```
-
-### Authentication
-
-Linear MCP uses OAuth 2.1 authentication. On first use, you'll be prompted to authorize access through your browser.
-
-**Connection endpoints:**
-- HTTP (recommended): `https://mcp.linear.app/mcp`
-- SSE: `https://mcp.linear.app/sse`
 
 ## License
 
