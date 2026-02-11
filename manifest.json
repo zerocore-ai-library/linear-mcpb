@@ -159,6 +159,7 @@
   ],
   "_meta": {
     "store.tool.mcpb": {
+      "categories": ["project-management"],
       "static_responses": {
         "tools/list": {
           "tools": [
