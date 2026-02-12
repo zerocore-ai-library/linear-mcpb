@@ -11,11 +11,7 @@
     "name": "Stephen Akinyemi"
   },
   "compatibility": {
-    "platforms": [
-      "darwin",
-      "win32",
-      "linux"
-    ]
+    "platforms": ["darwin", "win32", "linux"]
   },
   "server": {
     "transport": "http",
@@ -223,10 +219,7 @@
                     "description": "Content as Markdown"
                   }
                 },
-                "required": [
-                  "issueId",
-                  "body"
-                ]
+                "required": ["issueId", "body"]
               }
             },
             {
@@ -261,9 +254,7 @@
                     "type": "string"
                   }
                 },
-                "required": [
-                  "title"
-                ]
+                "required": ["title"]
               }
             },
             {
@@ -347,10 +338,7 @@
                           "minLength": 1
                         }
                       },
-                      "required": [
-                        "url",
-                        "title"
-                      ]
+                      "required": ["url", "title"]
                     }
                   },
                   "blocks": {
@@ -379,10 +367,7 @@
                     "type": "string"
                   }
                 },
-                "required": [
-                  "title",
-                  "team"
-                ]
+                "required": ["title", "team"]
               }
             },
             {
@@ -418,9 +403,7 @@
                     "type": "boolean"
                   }
                 },
-                "required": [
-                  "name"
-                ]
+                "required": ["name"]
               }
             },
             {
@@ -447,10 +430,7 @@
                     "type": "string"
                   }
                 },
-                "required": [
-                  "project",
-                  "name"
-                ]
+                "required": ["project", "name"]
               }
             },
             {
@@ -518,10 +498,7 @@
                     "type": "string"
                   }
                 },
-                "required": [
-                  "name",
-                  "team"
-                ]
+                "required": ["name", "team"]
               }
             },
             {
@@ -536,9 +513,7 @@
                     "description": "Attachment ID"
                   }
                 },
-                "required": [
-                  "id"
-                ]
+                "required": ["id"]
               }
             },
             {
@@ -553,9 +528,7 @@
                     "description": "Markdown content containing image references (e.g., issue description, comment body)"
                   }
                 },
-                "required": [
-                  "markdown"
-                ]
+                "required": ["markdown"]
               }
             },
             {
@@ -570,9 +543,7 @@
                     "description": "Attachment ID"
                   }
                 },
-                "required": [
-                  "id"
-                ]
+                "required": ["id"]
               }
             },
             {
@@ -587,9 +558,7 @@
                     "description": "Document ID or slug"
                   }
                 },
-                "required": [
-                  "id"
-                ]
+                "required": ["id"]
               }
             },
             {
@@ -609,9 +578,7 @@
                     "type": "boolean"
                   }
                 },
-                "required": [
-                  "id"
-                ]
+                "required": ["id"]
               }
             },
             {
@@ -634,11 +601,7 @@
                     "description": "Team name or ID"
                   }
                 },
-                "required": [
-                  "id",
-                  "name",
-                  "team"
-                ]
+                "required": ["id", "name", "team"]
               }
             },
             {
@@ -657,10 +620,7 @@
                     "description": "Milestone name or ID"
                   }
                 },
-                "required": [
-                  "project",
-                  "query"
-                ]
+                "required": ["project", "query"]
               }
             },
             {
@@ -685,9 +645,7 @@
                     "type": "boolean"
                   }
                 },
-                "required": [
-                  "query"
-                ]
+                "required": ["query"]
               }
             },
             {
@@ -702,9 +660,7 @@
                     "description": "Team UUID, key, or name"
                   }
                 },
-                "required": [
-                  "query"
-                ]
+                "required": ["query"]
               }
             },
             {
@@ -719,9 +675,7 @@
                     "description": "User ID, name, email, or \"me\""
                   }
                 },
-                "required": [
-                  "query"
-                ]
+                "required": ["query"]
               }
             },
             {
@@ -736,9 +690,7 @@
                     "description": "Issue ID"
                   }
                 },
-                "required": [
-                  "issueId"
-                ]
+                "required": ["issueId"]
               }
             },
             {
@@ -755,16 +707,10 @@
                   "type": {
                     "description": "Filter: current, previous, next, or all",
                     "type": "string",
-                    "enum": [
-                      "current",
-                      "previous",
-                      "next"
-                    ]
+                    "enum": ["current", "previous", "next"]
                   }
                 },
-                "required": [
-                  "teamId"
-                ]
+                "required": ["teamId"]
               }
             },
             {
@@ -788,10 +734,7 @@
                     "default": "updatedAt",
                     "description": "Sort: createdAt | updatedAt",
                     "type": "string",
-                    "enum": [
-                      "createdAt",
-                      "updatedAt"
-                    ]
+                    "enum": ["createdAt", "updatedAt"]
                   },
                   "query": {
                     "description": "Search query",
@@ -846,10 +789,7 @@
                     "default": "updatedAt",
                     "description": "Sort: createdAt | updatedAt",
                     "type": "string",
-                    "enum": [
-                      "createdAt",
-                      "updatedAt"
-                    ]
+                    "enum": ["createdAt", "updatedAt"]
                   },
                   "name": {
                     "description": "Filter by name",
@@ -874,9 +814,7 @@
                     "description": "Team name or ID"
                   }
                 },
-                "required": [
-                  "team"
-                ]
+                "required": ["team"]
               }
             },
             {
@@ -900,10 +838,7 @@
                     "default": "updatedAt",
                     "description": "Sort: createdAt | updatedAt",
                     "type": "string",
-                    "enum": [
-                      "createdAt",
-                      "updatedAt"
-                    ]
+                    "enum": ["createdAt", "updatedAt"]
                   },
                   "query": {
                     "description": "Search issue title or description",
@@ -973,9 +908,7 @@
                     "description": "Project name or ID"
                   }
                 },
-                "required": [
-                  "project"
-                ]
+                "required": ["project"]
               }
             },
             {
@@ -999,10 +932,7 @@
                     "default": "updatedAt",
                     "description": "Sort: createdAt | updatedAt",
                     "type": "string",
-                    "enum": [
-                      "createdAt",
-                      "updatedAt"
-                    ]
+                    "enum": ["createdAt", "updatedAt"]
                   },
                   "name": {
                     "description": "Filter by name",
@@ -1032,10 +962,7 @@
                     "default": "updatedAt",
                     "description": "Sort: createdAt | updatedAt",
                     "type": "string",
-                    "enum": [
-                      "createdAt",
-                      "updatedAt"
-                    ]
+                    "enum": ["createdAt", "updatedAt"]
                   },
                   "query": {
                     "description": "Search project name",
@@ -1099,10 +1026,7 @@
                     "default": "updatedAt",
                     "description": "Sort: createdAt | updatedAt",
                     "type": "string",
-                    "enum": [
-                      "createdAt",
-                      "updatedAt"
-                    ]
+                    "enum": ["createdAt", "updatedAt"]
                   },
                   "query": {
                     "description": "Search query",
@@ -1145,10 +1069,7 @@
                     "default": "updatedAt",
                     "description": "Sort: createdAt | updatedAt",
                     "type": "string",
-                    "enum": [
-                      "createdAt",
-                      "updatedAt"
-                    ]
+                    "enum": ["createdAt", "updatedAt"]
                   },
                   "query": {
                     "description": "Filter by name or email",
@@ -1178,9 +1099,7 @@
                     "type": "number"
                   }
                 },
-                "required": [
-                  "query"
-                ]
+                "required": ["query"]
               }
             },
             {
@@ -1215,9 +1134,7 @@
                     "type": "string"
                   }
                 },
-                "required": [
-                  "id"
-                ]
+                "required": ["id"]
               }
             },
             {
@@ -1319,10 +1236,7 @@
                           "minLength": 1
                         }
                       },
-                      "required": [
-                        "url",
-                        "title"
-                      ]
+                      "required": ["url", "title"]
                     }
                   },
                   "blocks": {
@@ -1358,9 +1272,7 @@
                     ]
                   }
                 },
-                "required": [
-                  "id"
-                ]
+                "required": ["id"]
               }
             },
             {
@@ -1398,10 +1310,7 @@
                     "description": "Target completion date (ISO format, null to remove)"
                   }
                 },
-                "required": [
-                  "project",
-                  "id"
-                ]
+                "required": ["project", "id"]
               }
             },
             {
@@ -1479,9 +1388,7 @@
                     }
                   }
                 },
-                "required": [
-                  "id"
-                ]
+                "required": ["id"]
               }
             }
           ]
